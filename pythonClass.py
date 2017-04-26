@@ -1,7 +1,9 @@
+underscore = "_"
 class Robot:
     """Represents a robot, with a name."""
     # A class variable, counting the number of robots
     population = 0
+
     def __init__(self, name):
         """Initializes the data."""
         self.__name = name
@@ -27,6 +29,7 @@ Yeah, they can do that."""
     def how_many(cls):
         """Prints the current population."""
         print("We have {:d} robots.".format(cls.population))
+'''
 droid1 = Robot("R2-D2")
 droid1.say_hi()
 print(droid1._age)
@@ -43,11 +46,11 @@ Robot.how_many()
 class Person:
 
    def __init__(self):
-       self.__name = 'haha'#私有属性
+       self.name = 'haha'#私有属性
        self.age = 22
 
-   def __get_name(self):##私有方法
-       return self.__name
+   def get_name(self):##私有方法
+       return self.name
 
    def get_age(self):
        return self.age
@@ -55,3 +58,13 @@ class Person:
 person = Person()
 # print person.get_age()
 # print person.__get_name()
+
+class Boy(Person):
+    def __init__(self):
+        self.name = 'qiming'
+    def die(self):
+        pass
+qiming = Boy()
+print(qiming.get_name())
+
+'''

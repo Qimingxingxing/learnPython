@@ -25,3 +25,9 @@ def add(x, y, f):
     return f(x) + f(y)
 print(add(-5, 6, abs))
 
+list(map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+l = ['A', 'B','C', ' ', '']
+l = list(filter(lambda x: x and x.strip(), l))
+print(l)
+sorted([36, 5, -12, 9, -21], key=abs)
+sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True )
