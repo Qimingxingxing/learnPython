@@ -15,3 +15,11 @@ set1.pop()
 print(set1)
 set1.remove(2)
 print(set1)
+print(set1.intersection([1,2,3,4,5]))
+# set1.add([1,2,3])
+# set和dict都不能放入可变对象！！！
+set1.add((10,11))
+print(set1)
+d = {}
+d[(10,)] = 1
+print(d[(10,)])

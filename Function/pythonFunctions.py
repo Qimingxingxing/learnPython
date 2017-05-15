@@ -1,5 +1,6 @@
-import pythonModule
-pythonModule.byteFile()
+def my_abs(x):
+    print(1)
+print(my_abs(-1))
 def varParameter(a, *b):
     print(b[-2:-1])
 varParameter(5, 1,2,3)
