@@ -1,5 +1,6 @@
 # http://www.cnblogs.com/linjiqin/p/3608541.html
 # cmd + Y delete line
+from pip._vendor.distlib.compat import raw_input
 
 L = [1,2,3,4,5]
 print(L)
@@ -20,10 +21,7 @@ listMultiply = [10] * 10
 print(listMultiply)
 # listSubstract = [1] - []
 # print(listSubstract)
-print(L)
-print(L)
-print(L)
-print(L)
+
 L = [5 for i in range(5)]
 L[0] = 1
 print(L.index(5)) #FIRST POINT
@@ -41,3 +39,20 @@ elif sum < 5:
     print("sum is less than %d" % 5)
 else:
     print("sum is greater than {}".format(5))
+cut = [1] * 10
+
+print(cut[1:-1])
+print(cut[1:])
+print(cut[0:])
+print(cut[-2:])
+print(cut[0:2])
+
+sum = 0
+n = 100
+while n > 0:
+    sum += n
+    n -= 1
+print(sum)
+
+# raw = raw_input()  str类型
+# print(raw)

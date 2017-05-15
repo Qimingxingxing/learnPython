@@ -21,6 +21,6 @@ print(isinstance(L, Iterator))
 print(isinstance(g, Iterable))
 print(isinstance(g, Iterator))
 
-# convert a List to generator
+# convert a Collections to generator
 gL = iter(L)
 print(isinstance(gL,Iterator))
