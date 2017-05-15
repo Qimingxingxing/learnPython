@@ -6,7 +6,8 @@ literal constants
 Numbers: integer and float, no seperate long type. int can be 
 any size of Integer.
 Strings:
-Triple Quotes: '''
+Triple Quotes:\
+'''
 multi-line Strings
 '''
 strings are immutable!  and no char type. single and double Quotes are the same
