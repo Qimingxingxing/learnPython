@@ -13,3 +13,13 @@ print(calc())
 nums = [1,2,3]
 print(calc(*nums))
 print(*nums)
+
+def keyword(a, b, **c):
+    print("a", a, "b", b, "c", c)
+keyword("hello","world")
+keyword("hello","world", q = "q", m = "m")
+
+d = {"qiming": 1,
+    "yiming" : 2
+    }
+keyword("","",**d)
