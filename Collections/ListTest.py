@@ -64,3 +64,5 @@ print(listGenerator)
 L = ['hello', 'world', 'nihao']
 L = [value.upper() for value in L]
 print(L)
+L = ['hello', 'world', 'nihao', 1]
+L = [value.upper() for value in L if isinstance(value, str)]

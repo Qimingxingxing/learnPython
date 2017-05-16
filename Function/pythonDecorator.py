@@ -1,8 +1,3 @@
-from pythonModule.pythonClass import *
-
-robot = Robot('a')
-print(underscore)
-
 class Student(object):
     @property
     def score(self):
@@ -35,3 +30,13 @@ class Student(object):
     def age(self):
         return 2015 - self._birth
 
+def outerFunction(func):
+    def innerFunction(*args, **kwargs):
+        func(*args, **kwargs)
+        print("%s" % func.__name__)
+    return innerFunction
+
+@outerFunction # now = outerFunction(now) = innerFunction
+def now():
+    print("5/16")
+now()
