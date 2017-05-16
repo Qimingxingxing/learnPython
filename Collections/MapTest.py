@@ -18,3 +18,10 @@ print(hashMap.keys())
 print(hashMap.values())
 for key, item in hashMap.items():
     print(key, item)
+
+for key in hashMap.keys():
+    print(key)
+
+for value in hashMap.values():
+    print(value)
+

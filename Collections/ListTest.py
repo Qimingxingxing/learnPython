@@ -56,3 +56,11 @@ print(sum)
 
 # raw = raw_input()  str类型
 # print(raw)
+
+listGenerator = [x * x for x in range(1,11) if x % 2]
+print(listGenerator)
+listGenerator = [m + n for m in "ABC" for n in "XYZ"]
+print(listGenerator)
+L = ['hello', 'world', 'nihao']
+L = [value.upper() for value in L]
+print(L)
